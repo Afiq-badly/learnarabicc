@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 1 - Lesson</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <style>
+    /* Popup styles */
+    .popup {
+      display: none; /* Initially hidden */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+      width: 80%;
+    }
+
+    .popup button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    .popup button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+   <header>
+    <div class="header-container">
+      
+      <!-- Left: Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../../../images/smkm.jpg" alt="Logo" />
+        </a>
+      </div>
+      
+      <!-- Center: Navigation -->
+      <div class="nav-wrapper">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../../../../index.html">الصفحة الرئيسية</a></li>
+            <li><a href="../../../../about.html">معلومات عنا</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Right: Title -->
+      <div class="title-wrapper">
+        <h1 class="site-title">دعونا نتعلم اللغة العربية</h1>
+      </div>
+  
+    </div>
+  </header>
+
+  <main>
+    <div class="quiz-box">
+      <!-- Image at the top -->
+      <img src="/images/module1/bengkel.png" alt="Quiz Image" class="quiz-image">
+
+      <!-- 2x2 Grid for the Quiz Buttons -->
+      <div class="quiz-buttons">
+        <div class="quiz-row">
+          <button class="quiz-btn" onclick="checkAnswer(1)">طَوِيلٌ</button>
+          <button class="quiz-btn" onclick="checkAnswer(2)">شَرِيطٌ</button>
+        </div>
+        <div class="quiz-row">
+          <button class="quiz-btn" onclick="checkAnswer(3)">وَرْشَةٌ</button>
+          <button class="quiz-btn" onclick="checkAnswer(4)">مِنْشَارٌ</button>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button class="quiz-back-btn" onclick="window.history.back()">⬅️ Back</button>
+      <button class="quiz-next-btn" onclick="window.location.href='module1-quiz6.html'">➡️ Next</button>
+    </div>
+  </main>
+
+  <!-- Popup Message -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p id="popup-message"></p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <script>
+    // Function to check the answer
+    function checkAnswer(option) {
+      var message = "";
+      
+      // Option 2 is correct
+      if (option === 3) {
+        message = "Correct Answer!";
+      } else {
+        message = "Wrong Answer!";
+      }
+
+      // Show the popup with the message
+      showPopup(message);
+    }
+
+    // Function to display the popup
+    function showPopup(message) {
+      document.getElementById("popup-message").textContent = message;
+      document.getElementById("popup").style.display = "flex";  // Show popup
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";  // Hide popup
+    }
+
+    // Ensure popup is hidden on page load (no blank popup)
+    window.onload = function() {
+      document.getElementById("popup").style.display = "none";  // Hide the popup when the page loads
+    }
+  </script>
+
+  <footer>
+   <p>&copy; دعونا نتعلم اللغة العربية | SMK MANTIN 2025</p>
+  </footer>
+
+</body>
+</html>
