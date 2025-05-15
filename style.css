@@ -501,35 +501,35 @@
     }
 
 
-.lesson1-1 { background-image: url('/images/module1/paku.png'); }
-.lesson1-2 { background-image: url('/images/module1/tukul.png'); }
-.lesson1-3 { background-image: url('/images/module1/gergaji.png'); }
-.lesson1-4 { background-image: url('/images/module1/kayu.png'); }
-.lesson1-5 { background-image: url('/images/module1/skru.png'); }
-.lesson1-6 { background-image: url('/images/module1/gam.png'); }
-.lesson1-7 { background-image: url('/images/module1/pitapengukur.png'); }
-.lesson1-8 { background-image: url('/images/module1/bengkel.png'); }
-.lesson1-9 { background-image: url('/images/module1/pemutarskru.png'); }
-.lesson1-10 { background-image: url('/images/module1/panjang.png'); }
-.lesson1-11{ background-image: url('/images/module1/pendek.png'); }
-.lesson1-12{ background-image: url('/images/module1/warna.png'); }
+.lesson1-1 { background-image: url('images/module1/paku.png'); }
+.lesson1-2 { background-image: url('images/module1/tukul.png'); }
+.lesson1-3 { background-image: url('images/module1/gergaji.png'); }
+.lesson1-4 { background-image: url('images/module1/kayu.png'); }
+.lesson1-5 { background-image: url('images/module1/skru.png'); }
+.lesson1-6 { background-image: url('images/module1/gam.png'); }
+.lesson1-7 { background-image: url('images/module1/pitapengukur.png'); }
+.lesson1-8 { background-image: url('images/module1/bengkel.png'); }
+.lesson1-9 { background-image: url('images/module1/pemutarskru.png'); }
+.lesson1-10 { background-image: url('images/module1/panjang.png'); }
+.lesson1-11{ background-image: url('images/module1/pendek.png'); }
+.lesson1-12{ background-image: url('images/module1/warna.png'); }
 
 
-.lesson2-1 { background-image: url('/images/module2/merekacipta.png'); }
-.lesson2-2 { background-image: url('/images/module2/memegang.png'); }
-.lesson2-3 { background-image: url('/images/module2/memasang.png'); }
-.lesson2-4 { background-image: url('/images/module2/memutar.png'); }
-.lesson2-5 { background-image: url('/images/module2/memotong.png'); }
-.lesson2-6 { background-image: url('/images/module2/membuat.png'); }
-.lesson2-7 { background-image: url('/images/module2/memasang2.png'); }
-.lesson2-8 { background-image: url('/images/module2/menggunting.png'); }
-.lesson2-9 { background-image: url('/images/module2/mengukur.png'); }
-.lesson2-10 { background-image: url('/images/module2/mengetuk.png'); }
-.lesson2-11{ background-image: url('/images/module2/membalut.png'); }
-.lesson2-12{ background-image: url('/images/module2/melekat.png'); }
-.lesson2-13 { background-image: url('/images/module2/menghias.png'); }
-.lesson2-14 { background-image: url('/images/module2/menyediakan.png'); }
-.lesson2-15 { background-image: url('/images/module2/menggantung.png'); }
+.lesson2-1 { background-image: url('images/module2/merekacipta.png'); }
+.lesson2-2 { background-image: url('images/module2/memegang.png'); }
+.lesson2-3 { background-image: url('images/module2/memasang.png'); }
+.lesson2-4 { background-image: url('images/module2/memutar.png'); }
+.lesson2-5 { background-image: url('images/module2/memotong.png'); }
+.lesson2-6 { background-image: url('images/module2/membuat.png'); }
+.lesson2-7 { background-image: url('images/module2/memasang2.png'); }
+.lesson2-8 { background-image: url('images/module2/menggunting.png'); }
+.lesson2-9 { background-image: url('images/module2/mengukur.png'); }
+.lesson2-10 { background-image: url('images/module2/mengetuk.png'); }
+.lesson2-11{ background-image: url('images/module2/membalut.png'); }
+.lesson2-12{ background-image: url('images/module2/melekat.png'); }
+.lesson2-13 { background-image: url('images/module2/menghias.png'); }
+.lesson2-14 { background-image: url('images/module2/menyediakan.png'); }
+.lesson2-15 { background-image: url('images/module2/menggantung.png'); }
 
   /* Background images for each module */
   .module1 {
