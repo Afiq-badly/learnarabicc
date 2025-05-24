@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
   
-  body {
+  /* body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #F1F1F1;
@@ -15,8 +15,36 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+  } */
   
+  body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #F1F1F1;  /* Will blend subtly with the image */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;  /* Needed for the ::before layer */
+  overflow-x: hidden;  /* Prevent horizontal scroll if image stretches */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/module1/classroom.jpg');  /* your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4 ;  /* adjust for subtlety */
+  z-index: -1;  /* keep it behind your content */
+  pointer-events: none;  /* ensures clicks go through */
+}
+
   header {
     background-color: #F1F1F1;
     padding: 1rem 2rem;
